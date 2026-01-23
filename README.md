@@ -1,1 +1,1 @@
-# devops-collab-assignment---LuxTravel
+# devops-collab-assignment-LuxTravel
