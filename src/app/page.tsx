@@ -65,12 +65,7 @@ const TOURS: Tour[] = [
   { id: 6, title: "Amalfi Coast Tour", location: "Italy", price: 2100, days: 8, image: "images/amalfi coast tour.webp", category: "Cultural", rating: 4.8 },
 ];
 
-const TEAM: TeamMember[] = [
-  { id: 1, name: "Sachintha Dilshan", role: "Founder & Travel Consultant", bio: "10+ years exploring the globe and crafting unforgettable journeys.", image: "images/sachintha.jpeg" },
-  { id: 2, name: "Sharadha Pathirana", role: "Operations Manager", bio: "Ensuring every logistical detail is perfect for your peace of mind.", image: "images/sharadha.jpeg" },
-  { id: 3, name: "Chamod Akalanka", role: "Tour Coordinator", bio: "Expert in curating authentic local experiences and hidden gems.", image: "images/chamod.png" },
-  { id: 4, name: "Nethmi Dilunika", role: "Customer Support Executive", bio: "Available 24/7 to assist you before, during, and after your trip.", image: "images/shani.png" },
-];
+
 
 const DESTINATIONS: Destination[] = [
   { id: 1, name: "Europe", count: "40+ Tours", image: "https://images.unsplash.com/photo-1471306224500-6d0d218be372?auto=format&fit=crop&q=80&w=600" },
@@ -427,21 +422,6 @@ const Hero = ({ onNavigate }: { onNavigate: (id: string) => void }) => {
           </motion.div>
         </motion.div>
       </div>
-      
-      {/* Scroll indicator */}
-      <motion.div 
-        initial={{ opacity: 0 }}
-        animate={{ opacity: 1, y: [0, 10, 0] }}
-        transition={{ delay: 1.5, duration: 2, repeat: Infinity }}
-        className="absolute bottom-10 left-1/2 -translate-x-1/2 text-white/70 z-30"
-      >
-        <div className="flex flex-col items-center gap-2">
-          <span className="text-xs uppercase tracking-widest font-semibold text-emerald-300">Scroll</span>
-          <div className="w-6 h-10 border-2 border-emerald-400/50 rounded-full flex justify-center p-1 backdrop-blur-sm">
-            <div className="w-1 h-2 bg-emerald-400 rounded-full" />
-          </div>
-        </div>
-      </motion.div>
     </div>
   );
 };
@@ -715,63 +695,7 @@ const Tours = ({ onBook }: { onBook: (tour: Tour) => void }) => {
   );
 };
 
-// 5. Team Page (Completely Remade)
-const Team = () => (
-  <div className="py-24 relative z-10">
-    <div className="container mx-auto px-6">
-      <SectionTitle title="The Visionaries" subtitle="Expertise Meets Passion" />
-      
-      <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
-        {TEAM.map((member, idx) => (
-          <motion.div
-            key={member.id}
-            initial={{ opacity: 0, y: 30 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            transition={{ delay: idx * 0.1, duration: 0.6 }}
-            className="group relative h-[450px] rounded-3xl overflow-hidden cursor-pointer"
-          >
-            {/* Image - Grayscale to Color & Scale Effect */}
-            <div className="absolute inset-0 bg-gray-900">
-              <img 
-                src={member.image} 
-                alt={member.name} 
-                className="w-full h-full object-cover transition-all duration-700 ease-out group-hover:scale-110 grayscale group-hover:grayscale-0 opacity-80 group-hover:opacity-100" 
-              />
-            </div>
 
-            {/* Gradient Overlay */}
-            <div className="absolute inset-0 bg-gradient-to-t from-black via-black/40 to-transparent opacity-90 group-hover:opacity-60 transition-opacity duration-500" />
-
-            {/* Content Container */}
-            <div className="absolute inset-0 flex flex-col justify-end p-6">
-              
-              {/* Name & Role - Moves up on hover */}
-              <div className="transform transition-transform duration-500 group-hover:-translate-y-24">
-                <div className="w-12 h-1 bg-emerald-500 mb-4 rounded-full" />
-                <h3 className="text-2xl font-bold text-white mb-1 leading-tight">{member.name}</h3>
-                <p className="text-emerald-400 text-sm font-medium uppercase tracking-wider">{member.role}</p>
-              </div>
-
-              {/* Bio & Socials - Hidden by default, slides up */}
-              <div className="absolute bottom-0 left-0 right-0 p-6 bg-gray-900/90 backdrop-blur-xl border-t border-white/10 transform translate-y-full group-hover:translate-y-0 transition-transform duration-500 ease-out">
-                <p className="text-gray-300 text-sm leading-relaxed mb-6 line-clamp-3">
-                  {member.bio}
-                </p>
-                <div className="flex items-center gap-4">
-                  {[Linkedin, Twitter, Mail].map((Icon, i) => (
-                    <div key={i} className="w-10 h-10 rounded-full bg-white/5 border border-white/10 flex items-center justify-center text-white hover:bg-emerald-500 hover:border-emerald-500 transition-all hover:scale-110">
-                      <Icon size={18} />
-                    </div>
-                  ))}
-                </div>
-              </div>
-            </div>
-          </motion.div>
-        ))}
-      </div>
-    </div>
-  </div>
-);
 
 // 6. About Page (Remade Card Section as requested)
 const About = () => {
@@ -1381,9 +1305,9 @@ const Navbar = ({
     { name: 'About', id: 'about' },
     { name: 'Tours', id: 'tours' },
     { name: 'Destinations', id: 'destinations' },
-    { name: 'Team', id: 'team' },
     { name: 'Contact', id: 'contact' },
   ];
+
 
   if (currentRoute === 'booking') return null; // Hide Navbar on booking page for immersion
 
@@ -1588,7 +1512,7 @@ export default function App() {
   // Add scroll spy to update active state
   useEffect(() => {
     const handleScroll = () => {
-      const sections = ['home', 'features', 'about', 'destinations', 'tours', 'team', 'testimonials', 'contact'];
+      const sections = ['home', 'features', 'about', 'destinations', 'tours', 'testimonials', 'contact'];
       // Offset logic: we want to trigger the active state when the section is near the middle/top
       const scrollPosition = window.scrollY + 150; 
 
@@ -1656,6 +1580,12 @@ export default function App() {
         isOpen={isProfileOpen} 
         onClose={() => setIsProfileOpen(false)} 
         onUpdate={setUserProfile}
+        userProfile={userProfile}
+        onLogout={() => {
+          localStorage.removeItem('luxe_user_profile');
+          setUserProfile(null);
+          setIsProfileOpen(false);
+        }}
       />
 
       <AnimatePresence mode="wait">
@@ -1679,7 +1609,6 @@ export default function App() {
             <div id="about"><About /></div>
             <div id="destinations"><Destinations /></div>
             <div id="tours"><Tours onBook={handleBook} /></div>
-            <div id="team"><Team /></div>
             <div id="testimonials"><Testimonials /></div>
             <div id="contact"><Contact /></div>
           </motion.main>
