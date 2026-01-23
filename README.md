@@ -6,7 +6,7 @@
 | Name | Student ID | Role |
 |------|------------|------|
 | **D.M.S Dilshan Madhushankha** | ITBIN-2313-0137 | DevOps Enginner |
-| **D.P.D Sharadha Pathirana** | ITBIN-2313-0078 | Full Stack Developer Developer |
+| **D.P.D Sharadha Pathirana** | ITBIN-2313-0078 | Full Stack Developer |
 
 ## 📌 Project Description
 
