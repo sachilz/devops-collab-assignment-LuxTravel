@@ -110,12 +110,12 @@ We are actively contributed to the project using professional Git workflows incl
 
 ### ✅ Collaboration Evidence
 
-- ✔ Multiple feature branches created and merged  
-- ✔ Multiple pull requests submitted and reviewed  
-- ✔ Merge conflicts intentionally created and successfully resolved  
-- ✔ Balanced commit distribution across all members  
-- ✔ Clear CI/CD workflow execution history  
-- ✔ Continuous deployment via GitHub Actions  
+- Multiple feature branches created and merged  
+- Multiple pull requests submitted and reviewed  
+- Merge conflicts intentionally created and successfully resolved  
+- Balanced commit distribution across all members  
+- Clear CI/CD workflow execution history  
+- Continuous deployment via GitHub Actions  
 ---
 ## ⚙️ Setup Instructions
 
