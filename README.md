@@ -20,6 +20,13 @@ This project simulates a real-world DevOps team environment by implementing prof
 🔗 **Frontend Website:** https://devops-collab-assignment-lux-travel.vercel.app/  
 🔗 **Admin Panel:** https://devops-collab-assignment-lux-travel.vercel.app/admin
 
+
+```bash
+Admin panel email : admin@gmail.com
+Admin panel password : admin@123
+```
+
+
 ---
 
 ## 🛠️ Technologies Used
