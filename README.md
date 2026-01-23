@@ -5,8 +5,8 @@
 ## 👥 Group Members
 | Name | Student ID | Role |
 |------|------------|------|
-| **D.M.S Dilshan Madhushankha** | ITBIN-2313-0137 | DevOps / Release Manager |
-| **D.P.D Sharadha Pathirana** | ITBIN-2313-0078 | Frontend / Web Developer |
+| **D.M.S Dilshan Madhushankha** | ITBIN-2313-0137 | DevOps Enginner |
+| **D.P.D Sharadha Pathirana** | ITBIN-2313-0078 | Full Stack Developer Developer |
 
 ## 📌 Project Description
 
@@ -26,6 +26,9 @@ Admin panel email : admin@gmail.com
 Admin panel password : admin@123
 ```
 
+## ⚙️ Build Status
+![CI](https://github.com/sachilz/devops-collab-assignment-LuxTravel/actions/workflows/ci.yml/badge.svg)
+![CI](https://github.com/sachilz/devops-collab-assignment-LuxTravel/actions/workflows/deploy.yml/badge.svg)
 
 ---
 
@@ -42,11 +45,14 @@ Admin panel password : admin@123
 ---
 ## ✨ Features
 
-| Category   | Features |
-|------------|-----------|
-| 🌐 **Frontend** | - Modern travel agency UI <br> - Responsive design <br> - Tour packages showcase <br> - Contact & booking forms <br> - Mobile-friendly navigation |
-| 🔐 **Admin Panel** | - Secure admin dashboard <br> - View & manage bookings <br> - Manage tour packages <br> - User data management <br> - Dashboard analytics |
-| ⚙️ **DevOps** | - Automated CI pipeline <br> - Auto deployment to Vercel <br> - GitHub branch protection <br> - Team-based Git workflow |
+### 🌐 Frontend
+The frontend of the Luxe Travel platform provides a modern and visually appealing travel agency user interface. It is fully responsive, ensuring seamless access across desktops, tablets, and mobile devices. The platform showcases curated tour packages, includes interactive contact and booking forms, and offers smooth, mobile-friendly navigation for an enhanced user experience.
+
+### 🔐 Admin Panel
+The admin panel offers a secure and powerful dashboard for administrators to efficiently manage the platform. It enables viewing and managing customer bookings, handling tour package data, managing user information, and accessing real-time dashboard analytics to support data-driven decision making.
+
+### ⚙️ DevOps
+The DevOps implementation ensures reliability, automation, and scalability through an automated CI pipeline for continuous testing and quality assurance. The system supports automatic deployment to Vercel, GitHub branch protection for secure collaboration, and a structured team-based Git workflow that follows industry best practices.
 
 ---
 
@@ -56,8 +62,8 @@ We implemented the following branching strategy:
 
 - `main` – Production-ready branch (protected)
 - `develop` – Integration branch
-- `feature/backend*` – Feature development branches
-- `feature/frontend*` – Feature development branches
+- `feature/backend` – Feature development branches
+- `feature/frontend` – Feature development branches
 
 ---
 
@@ -124,16 +130,9 @@ We are actively contributed to the project using professional Git workflows incl
 - Clear CI/CD workflow execution history  
 - Continuous deployment via GitHub Actions  
 ---
-## ⚙️ Setup Instructions
+# ⚙️ Setup Instructions
 
-### 🔧 Prerequisites
-- Node.js (version 18 or higher)
-- Git
-- GitHub Account
-
----
-
-# 📥 Installation
+## Installation
 
 ```bash
 https://github.com/sachilz/devops-collab-assignment-LuxTravel.git
