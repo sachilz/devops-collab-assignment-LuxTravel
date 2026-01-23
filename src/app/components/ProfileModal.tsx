@@ -3,7 +3,7 @@
 import React, { useState, useEffect } from 'react';
 import { X, User, Save, Upload, Mail, Camera, Sparkles, MapPin, Lock, LogOut, Image as ImageIcon } from 'lucide-react';
 import { motion, AnimatePresence } from 'framer-motion';
-import { collection, addDoc, serverTimestamp } from "firebase/firestore"; 
+import { collection, addDoc, serverTimestamp } from "firebase/firestore";
 import { db } from "@/lib/firebase";
 
 interface ProfileModalProps {
