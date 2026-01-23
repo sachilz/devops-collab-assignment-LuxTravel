@@ -1,5 +1,6 @@
 # 🚀 Luxe Travel – Advanced Git & DevOps Team Collaboration Project
 ---
+![Frontend](public/images/homepage.png)
 
 ## 👥 Group Members
 | Name | Student ID | Role |
