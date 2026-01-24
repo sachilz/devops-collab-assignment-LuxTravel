@@ -17,7 +17,7 @@ This project simulates a real-world DevOps team environment by implementing prof
 
 ## 🌍 Live Deployment
 
-🔗 **Frontend Website:** https://devops-collab-assignment-lux-travel.vercel.app/  
+🔗 **Frontend Website:** https://devops-collab-assignment-lux-travel.vercel.app/ 
 🔗 **Admin Panel:** https://devops-collab-assignment-lux-travel.vercel.app/admin
 
 
