@@ -130,30 +130,40 @@ We are actively contributed to the project using professional Git workflows incl
 - Clear CI/CD workflow execution history  
 - Continuous deployment via GitHub Actions  
 ---
-# ⚙️ Setup Instructions
 
-## Installation
+## 🐳 Docker Containerization
+This project includes:
+- dockerfile (multi-stage optimized build)
+- docker-compose.yml (service orchestration)
+- .dockerignore (optimized build context)
 
+## ⚙️ Prerequisites
+Before running this project, install:
+- docker (v20+)
+- docker Compose (v2+)
+- Git
+
+## 📥 Clone Repository
 ```bash
-https://github.com/sachilz/devops-collab-assignment-LuxTravel.git
+git clone https://github.com/sachilz/devops-collab-assignment-LuxTravel.git
 ```
-## Navigate to project directory
+
+## ✅ Navigate to project directory
 ```bash
 cd devops-collab-assignment-LuxTravel
 ```
 
-## Install dependencies
+## 🏗️ Build Docker Image
 ```bash
-npm install
+docker compose build
 ```
 
-## Run development server
+## ▶️ Run Application (Production Mode)
 ```bash
-npm run dev
+docker compose up
 ```
 
-# ✅ How to Open Admin Panel (Local + Live)
-
+## 🌐 Access Application (Using Vercel)
 ## Frontend
 ```bash
 https://devops-collab-assignment-lux-travel.vercel.app/
@@ -162,6 +172,23 @@ https://devops-collab-assignment-lux-travel.vercel.app/
 ## Admin Panel
 ```bash
 https://devops-collab-assignment-lux-travel.vercel.app/admin
+```
+
+## 🌐 Access Application (Locally)
+## Frontend
+```bash
+http://localhost:3000
+```
+
+## Admin Panel
+```bash
+http://localhost:3000/admin
+```
+
+## 🧑‍💻 Development Mode (Without Docker)
+```bash
+npm install
+npm run dev
 ```
 
 ## 🗂️ Repository Structure
