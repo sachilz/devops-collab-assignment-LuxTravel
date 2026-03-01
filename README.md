@@ -195,31 +195,41 @@ npm run dev
 
 ```bash
 luxe-travel/
+│
 ├── .github/
 │   └── workflows/
 │       ├── ci.yml
 │       └── deploy.yml
+│
 ├── public/
 │   └── images/
+│
 ├── src/
 │   └── app/
 │       ├── admin/
 │       │   └── page.tsx
+│       │
 │       ├── components/
 │       │   └── ProfileModal.tsx
+│       │
 │       ├── lib/
 │       │   ├── bookings.ts
 │       │   └── firebase.ts
+│       │
 │       ├── globals.css
 │       ├── layout.tsx
 │       └── page.tsx
+│
+├── .dockerignore
 ├── .env.local
 ├── .eslintrc.json
 ├── .gitignore
+├── docker-compose.yml
+├── dockerfile
 ├── next-env.d.ts
 ├── next.config.js
-├── package-lock.json
 ├── package.json
+├── package-lock.json
 ├── postcss.config.js
 ├── tailwind.config.ts
 ├── tsconfig.json
