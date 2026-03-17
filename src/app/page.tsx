@@ -394,7 +394,7 @@ const Hero = ({ onNavigate }: { onNavigate: (id: string) => void }) => {
           <motion.h1 variants={heroItemVariants} className="text-5xl md:text-7xl lg:text-8xl font-bold leading-tight mb-6 tracking-tight drop-shadow-2xl">
             Discover Your Next <br />
             <span className="text-transparent bg-clip-text bg-gradient-to-r from-emerald-400 via-teal-200 to-emerald-400 bg-300% animate-gradient">
-              Great Adventure "Woh"
+              Great Adventure
             </span>
           </motion.h1>
           
